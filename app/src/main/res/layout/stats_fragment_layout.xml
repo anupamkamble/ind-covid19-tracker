@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/lastupdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lastUpdated"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastupdated"
+        android:text="@string/summary"
+        android:textSize="18dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/totalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/summary"
+        android:text="@string/total_stats"
+        android:textSize="18dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/totalCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/summary"
+        android:text="0"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="10dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/dischargeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discharged"
+        app:layout_constraintTop_toBottomOf="@+id/totalLabel"
+        android:textSize="18dp"
+
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/dischargeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/totalLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="10dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/deathLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deaths"
+        app:layout_constraintTop_toBottomOf="@+id/dischargeLabel"
+        android:textSize="18dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/deathCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/dischargeLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="10dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/foreignLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmed_for"
+        app:layout_constraintTop_toBottomOf="@+id/deathLabel"
+        android:textSize="18dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/foreignerIndCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/deathLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="10dp"
+        >
+    </TextView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/foreignLabel"
+        android:paddingTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

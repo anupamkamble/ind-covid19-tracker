@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Covid-19 Tracker</string>
+
+
+<!--    network errors-->
+    <string name="network_connection_error">Internet connection lost, please retry again</string>
+    <string name="network_default_error">Something wrong happened, please retry again</string>
+    <string name="network_internal_error">Our systems got an error, please retry again</string>
+    <string name="network_server_not_available">Our services are under maintenance, please retry after some time</string>
+    <string name="server_connection_error">Not able to connect, please retry again</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="network_login_again">Please log in again</string>
+
+    <!--menu-->
+    <string name="menu_stats">Stats</string>
+    <string name="menu_daily_stats">Daily Stats</string>
+    <string name="menu_hospitals">Hospitals</string>
+    <string name="menu_contacts">Contacts</string>
+
+    <!--stats-->
+    <string name="summary">Summary</string>
+    <string name="total_stats">Total</string>
+    <string name="discharged">Discharged</string>
+    <string name="deaths">Deaths</string>
+    <string name="confirmed_for">Confirmed Indian + Foreigner</string>
+    <string name="confirmed_in">Confirmed Indians</string>
+    <string name="default_location">Andaman and Nicobar Islands</string>
+
+    <!--hospital-->
+    <string name="total_hos">Total</string>
+    <string name="totalBeds">Total Beds(Urban+Rural)</string>
+    <string name="totalHospitals">Total Hospitals(Urban+Rural)</string>
+    <string name="sources">https://pib.gov.in/</string>
+
+    <!--contacts-->
+    <string name="primary">Primary</string>
+    <string name="number_tollfree">Toll-Free Number</string>
+    <string name="email">Email</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+
+
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#60a8c4</color>
+    <color name="colorPrimary">#87ceeb</color>
+    <color name="theme_first">#9dd6ee</color>
+    <color name="theme_second">#b2def2</color>
+    <color name="theme_third">#c6e6f5</color>
+    <color name="theme_fourth">#daeff8</color>
+    <color name="theme_fifth">#ecf7fc</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="menu_background">#598496</color>
+
+    <color name="colorAccent">#a0c8da</color>
+    <color name="black">#000000</color>
+
+    <color name="textColor">#f8f8ff</color>
+
+    <color name="linkColor">#ff355e</color>
+
+
+</resources>

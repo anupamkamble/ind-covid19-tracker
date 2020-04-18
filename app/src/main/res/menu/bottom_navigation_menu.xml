@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/itemStats"
+          android:title="@string/menu_stats"
+          android:titleCondensed="@string/menu_stats"
+          android:icon="@drawable/selector_home"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/itemDailyStats"
+          android:title="@string/menu_daily_stats"
+          android:titleCondensed="@string/menu_daily_stats"
+          android:icon="@drawable/selector_add_photos"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/itemHospital"
+          android:title="@string/menu_hospitals"
+          android:titleCondensed="@string/menu_hospitals"
+          android:icon="@drawable/hospital_selector"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/itemContact"
+        android:title="@string/menu_contacts"
+        android:titleCondensed="@string/menu_contacts"
+        android:icon="@drawable/selector_profile"
+        app:showAsAction="always"/>
+</menu>
